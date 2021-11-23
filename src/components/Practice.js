@@ -30,9 +30,15 @@ class Practice extends React.Component {
           onChange={this.showButton}
         />{" "}
         show button
+        <br />
         {this.state.isButtonVisible && (
-          <button onClick={this.increment}>{this.state.counter}</button>
+          <>
+            <button onClick={this.increment}>{this.state.counter}</button>
+            <br />
+          </>
         )}
+        <br />
+        <label>Enter Name</label>{" "}
         <input type="text" onChange={this.onTextChanged} />
         {this.state.enteredText !== "" && this.state.enteredText}
       </>
